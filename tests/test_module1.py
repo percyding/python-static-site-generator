@@ -245,7 +245,7 @@ def test_site_path_rglob_module1(parse):
         if_is_dir_exist
     ), "Have you created an `if` statement that checks if `path` is a directory?"
 
-    if_line = len(for_loop.if_.value) == 1
+    if_line = len(for_loop.if_.value) >= 1
     assert if_line, "Do you have at least one statement in your `if` statement?"
 
     self_create_dir_exists = (
